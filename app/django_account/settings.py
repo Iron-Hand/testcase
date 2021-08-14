@@ -131,6 +131,6 @@ CELERY_RESULT_BACKEND = "redis://redis:6379"
 CELERY_BEAT_SCHEDULE = {
     "fix_hold_task": {
         "task": "account.tasks.fix_hold_task",
-        "schedule": crontab(minute="*/1"),
+        "schedule": crontab(minute="*/10"),
     },
 }
